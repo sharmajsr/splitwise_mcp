@@ -4,7 +4,9 @@ from splitwise import Splitwise
 import os
 import requests
 import json
+from dotenv import load_dotenv
 
+load_dotenv()
 
 mcp = FastMCP()
 
