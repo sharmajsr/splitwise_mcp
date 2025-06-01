@@ -32,8 +32,6 @@ def add_splitwise_expense(cost:int,description:str,group_id:int,split_equally:bo
     response = requests.request("POST", splitwise_base_url +"/create_expense", headers=headers, data=payload)
     return response.status_code,response.text
 
-# status,response = add_splitwise_expense(102,"Test - Grocery run",82228382,True)
-# print(status,response)
 
 
 def get_balance(user_id: str) -> str:
